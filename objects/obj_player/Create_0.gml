@@ -13,3 +13,5 @@ grav_speed = 1;
 air_resistance = 1;
 
 jump_strength=12;
+
+slope_max = 3;

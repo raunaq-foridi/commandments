@@ -3,12 +3,26 @@
 
 
 //Controls
+
+//gravity, groundedness
 if (detect_tile(0,1)!=0){
 	grounded=true;
-	vel_y=0;
+	if(vel_y>=0){
+		vel_y=0;
+	}
 }
-else{grounded=false;}
+else{
+	grounded=false;
+	vel_y+=grav_speed;
+}
 
+//head-hitting
+if (detect_tile(0,-1)!=0){
+	if(vel_y<=0){
+		vel_y=0;
+	}
+	
+}
 
 if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
 	vel_x=-move_speed;

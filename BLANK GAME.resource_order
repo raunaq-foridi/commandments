@@ -20,7 +20,11 @@
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"detect_tile","order":1,"path":"scripts/detect_tile/detect_tile.yy",},
     {"name":"read_input","order":2,"path":"scripts/read_input/read_input.yy",},
+    {"name":"print","order":4,"path":"scripts/print/print.yy",},
+    {"name":"slopes","order":3,"path":"scripts/slopes/slopes.yy",},
+    {"name":"complex","order":2,"path":"sprites/complex/complex.yy",},
     {"name":"Sprite1","order":16,"path":"sprites/Sprite1/Sprite1.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"complexTiles","order":3,"path":"tilesets/complexTiles/complexTiles.yy",},
   ],
 }
