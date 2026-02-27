@@ -19,6 +19,6 @@ if(grounded){
 		
 }
 else{
-	vel_y+=1;
+	vel_y+=grav_speed;
 	
 }
