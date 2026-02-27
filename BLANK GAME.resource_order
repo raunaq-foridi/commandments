@@ -17,14 +17,17 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_climbable","order":2,"path":"objects/obj_climbable/obj_climbable.yy",},
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"detect_tile","order":1,"path":"scripts/detect_tile/detect_tile.yy",},
-    {"name":"read_input","order":2,"path":"scripts/read_input/read_input.yy",},
     {"name":"print","order":4,"path":"scripts/print/print.yy",},
+    {"name":"read_input","order":2,"path":"scripts/read_input/read_input.yy",},
     {"name":"slopes","order":3,"path":"scripts/slopes/slopes.yy",},
     {"name":"complex","order":2,"path":"sprites/complex/complex.yy",},
     {"name":"Sprite1","order":16,"path":"sprites/Sprite1/Sprite1.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Sprite5","order":1,"path":"sprites/Sprite5/Sprite5.yy",},
+    {"name":"spr_vine","order":2,"path":"sprites/spr_vine/spr_vine.yy",},
     {"name":"complexTiles","order":3,"path":"tilesets/complexTiles/complexTiles.yy",},
   ],
 }
