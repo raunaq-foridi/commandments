@@ -32,7 +32,11 @@ jump_number=0;
 climbing=false;
 climbed_obj = noone;
 climb_speed = 4;
+climb_cooldown=10;
+cant_climb = false;
 
 flying=false;
-fly_speed=5;
+fly_speed=3;
 flight_time=0;		//unimplemented
+fly_angle=0;
+turn_speed=0.05;
