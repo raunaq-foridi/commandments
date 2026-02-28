@@ -7,7 +7,7 @@ vel_y = 0;
 facing = "left";
 
 move_speed = 5;
-friction_power = 1;
+friction_power_true = 2;
 
 grav_speed = 1;
 air_resistance = 1;
@@ -17,7 +17,7 @@ jump_strength=12;
 slope_max = 3;
 
 dash_strength = 15;
-up_dash_speed_cap = 0.03; //how much are you clamping the upwards dashing to?
+up_dash_speed_cap = 0.3; //how much are you clamping the upwards dashing to?
 vert_dash_speed_mult = 0.5; //how much are you restricting vertical dashing in general vs horizontal dashing?
 dashing=false;				//is the dash currently ongoing?
 dash_length=8;				//how long until the dash stops?
