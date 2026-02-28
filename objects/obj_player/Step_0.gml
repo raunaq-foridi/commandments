@@ -162,7 +162,6 @@ if(flying){
 }
 
 
-
 dir[0] = 0;
 dir[1]=0;
 
@@ -271,7 +270,7 @@ if (keyboard_check_pressed(vk_shift) and not dash_cooling){
 	var _normal_dir = [ dir[0]/_mag, dir[1]/_mag];
 	
 	vel_x = _normal_dir[0] * dash_strength;
-	vel_y = _normal_dir[1] * dash_strength;
+	vel_y = min(_normal_dir[1], up_dash_speed_cap) * dash_strength * vert_dash_speed_mult;
 	
 	dashing=true;
 	alarm[0]=dash_length;
