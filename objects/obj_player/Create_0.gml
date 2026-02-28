@@ -33,7 +33,7 @@ climb_speed = 4;
 climb_cooldown=10;
 cant_climb = false;
 
-flying=true;
+flying=false;
 fly_speed=3;
 flight_time=0;		//unimplemented
 fly_angle=0;

@@ -6,17 +6,7 @@
 
 if(flying){
 	fly_angle%=2*pi;
-	/*if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){dir[0]=-1;}
-	else if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){dir[0]=-1;}
-	//else {dir[0]=0}
-	
-	if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){dir[1]=-1;}
-	else if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){dir[1]=-1;}
-*/
-	/*if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A")) ){dir[0]=-1;}
-	else if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D")) ){dir[0]=1;}
-	//else {dir[0]=0}*/
-	
+
 	if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A")) ){
 		dir[0]=-1;
 		if (not (keyboard_check(vk_up) or keyboard_check(ord("W"))
@@ -75,19 +65,12 @@ if(flying){
 	var _normal_dir = [ dir[0]/_mag, dir[1]/_mag];
 	
 	var _target_angle = arctan2(_normal_dir[1],_normal_dir[0]);
-	//fly_angle=fly_angle mod 2*pi;
-	//_target_angle=_target_angle mod 2*pi;
-	/*if (abs(_target_angle-fly_angle)>pi){
-		_target_angle+=2*pi;	
-	}*/
-	
+
 	var _turn = _target_angle - fly_angle;
 	if(_turn>pi){_turn-=2*pi;}
 	if(_turn<-pi){_turn+=2*pi;}
-	//fly_angle = lerp(fly_angle,_target_angle,turn_speed);
 	fly_angle = lerp(fly_angle,fly_angle+_turn,turn_speed);
-	//if (fly_angle>2*pi){fly_angle-=2*pi};
-	
+
 	_normal_dir[0] = cos(fly_angle);
 	_normal_dir[1] = sin(fly_angle);
 	print(_turn);
@@ -120,6 +103,20 @@ else{
 	vel_y+=grav_speed;
 }
 
+//Semi solids
+if(place_meeting(x,y+1,obj_semisolid) and vel_y>=0){
+	var _semisolid = furthest_instance(obj_semisolid);
+	if(not place_meeting(x,y,_semisolid)){
+		grounded=true;		//if at foot but NOT intersecting player, set grounded.
+		flying=false;
+		if(vel_y>=0){
+			vel_y=0;
+		}
+		jump_number=0;
+	}
+
+}
+//
 friction_power = 1;
 if(climbing){vel_y=0;
 	friction_power=3;}
