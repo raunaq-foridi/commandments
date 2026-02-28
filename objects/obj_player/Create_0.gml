@@ -32,5 +32,5 @@ climbed_obj = noone;
 climb_speed = 4;
 
 flying=false;
-fly_speed=3;
+fly_speed=5;
 flight_time=0;		//unimplemented
