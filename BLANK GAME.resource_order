@@ -20,7 +20,6 @@
     {"name":"obj_camera_controller","order":3,"path":"objects/obj_camera_controller/obj_camera_controller.yy",},
     {"name":"obj_climbable","order":2,"path":"objects/obj_climbable/obj_climbable.yy",},
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
-    {"name":"obj_semisolid","order":5,"path":"objects/obj_semisolid/obj_semisolid.yy",},
     {"name":"detect_tile","order":1,"path":"scripts/detect_tile/detect_tile.yy",},
     {"name":"print","order":4,"path":"scripts/print/print.yy",},
     {"name":"read_input","order":2,"path":"scripts/read_input/read_input.yy",},

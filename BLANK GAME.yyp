@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"BLANK GAME",
   "resources":[
@@ -39,7 +39,6 @@
     {"id":{"name":"obj_climbable","path":"objects/obj_climbable/obj_climbable.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_semisolid","path":"objects/obj_semisolid/obj_semisolid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"detect_tile","path":"scripts/detect_tile/detect_tile.yy",},},
     {"id":{"name":"Movement","path":"scripts/Movement/Movement.yy",},},
