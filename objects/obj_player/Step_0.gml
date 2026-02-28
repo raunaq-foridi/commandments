@@ -162,15 +162,18 @@ if(flying){
 }
 
 
-
-dir[0] = 0;
+//dir[0] = 0;
 dir[1]=0;
 
 
 //gravity, groundedness
 
 //possibly cancel gravity while dashing?
-if(dashing){grav_speed=0;}
+var _friction_power = friction_power_true;
+if(dashing) {
+	grav_speed=0;
+	_friction_power *= 2;
+}
 else{grav_speed = 1;}
 
 if (detect_tile(0,1)!=0 or climbing){
@@ -199,9 +202,8 @@ if(place_meeting(x,y+1,obj_semisolid) and vel_y>=0){
 
 }
 //
-friction_power = 1;
 if(climbing){vel_y=0;
-	friction_power=3;}
+	_friction_power*=3;}
 if(not place_meeting(x,y,obj_climbable)){climbing=false;}
 //head-hitting
 if (detect_tile(0,-1)!=0){
@@ -281,11 +283,12 @@ if (keyboard_check_pressed(vk_shift) and not dash_cooling){
 	print(dir);
 	//vel_x = 0;
 	//vel_y = 0;
+	dir[1] = min(dir[1], up_dash_speed_cap)
 	var _mag = sqrt( sqr(dir[0]) + sqr(dir[1]) ); //pythag lol
 	var _normal_dir = [ dir[0]/_mag, dir[1]/_mag];
 	
 	vel_x = _normal_dir[0] * dash_strength;
-	vel_y = _normal_dir[1] * dash_strength;
+	vel_y = _normal_dir[1] * dash_strength * vert_dash_speed_mult;
 	
 	dashing=true;
 	alarm[0]=dash_length;
@@ -301,7 +304,7 @@ if (keyboard_check_pressed(vk_shift) and not dash_cooling){
 //friction
 if (!dashing and !flying){
 	if (round(vel_x)!=0){
-		var _applied_friction = sign(vel_x) * friction_power;	//constant friction, slows per second.
+		var _applied_friction = sign(vel_x) * _friction_power;	//constant friction, slows per second.
 		if(not grounded){
 			_applied_friction= sign(vel_x) * air_resistance;	//constant
 		
