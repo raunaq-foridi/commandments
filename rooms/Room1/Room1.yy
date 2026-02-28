@@ -19,8 +19,12 @@
           2,12,13,-80,-2147483648,4,8,9,10,11,-896,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"solid_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"solid_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
-          -3279,-2147483648,-47,1,-39,-2147483648,-47,3,-242,-2147483648,-7,0,-79,-2147483648,-2,0,-3,-2147483648,
-          -3,0,-83,-2147483648,-6,0,-291,-2147483648,
+          -558,-2147483648,1,2,-54,-2147483648,1,2,-270,-2147483648,1,2,-117,-2147483648,1,4,-75,-2147483648,1,
+          2,-272,-2147483648,1,2,-38,-2147483648,1,2,-58,-2147483648,1,4,-102,-2147483648,1,2,-26,-2147483648,
+          1,2,-365,-2147483648,1,4,-112,-2147483648,1,2,-23,-2147483648,1,2,-129,-2147483648,1,4,-629,-2147483648,
+          1,2,-66,-2147483648,1,2,-369,-2147483648,-47,1,-39,-2147483648,-47,3,-21,-2147483648,1,2,-220,-2147483648,
+          -7,0,-79,-2147483648,-2,0,-3,-2147483648,-3,0,-15,-2147483648,1,2,-67,-2147483648,-6,0,-67,-2147483648,
+          1,2,-223,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_55FE7391","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55FE7391","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":480.0,},

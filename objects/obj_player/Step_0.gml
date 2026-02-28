@@ -5,7 +5,7 @@
 //overrides basically all other controls. If flying, ignore everything else
 
 if(flying){
-	
+	fly_angle%=2*pi;
 	/*if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){dir[0]=-1;}
 	else if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){dir[0]=-1;}
 	//else {dir[0]=0}
@@ -74,9 +74,26 @@ if(flying){
 	var _mag = sqrt( sqr(dir[0]) + sqr(dir[1]) ); //pythag lol
 	var _normal_dir = [ dir[0]/_mag, dir[1]/_mag];
 	
+	var _target_angle = arctan2(_normal_dir[1],_normal_dir[0]);
+	//fly_angle=fly_angle mod 2*pi;
+	//_target_angle=_target_angle mod 2*pi;
+	/*if (abs(_target_angle-fly_angle)>pi){
+		_target_angle+=2*pi;	
+	}*/
 	
+	var _turn = _target_angle - fly_angle;
+	if(_turn>pi){_turn-=2*pi;}
+	if(_turn<-pi){_turn+=2*pi;}
+	//fly_angle = lerp(fly_angle,_target_angle,turn_speed);
+	fly_angle = lerp(fly_angle,fly_angle+_turn,turn_speed);
+	//if (fly_angle>2*pi){fly_angle-=2*pi};
 	
+	_normal_dir[0] = cos(fly_angle);
+	_normal_dir[1] = sin(fly_angle);
+	print(_turn);
+	print(fly_angle, _normal_dir);
 	move_steps(_normal_dir[0] *fly_speed,_normal_dir[1] * fly_speed);
+	
 	exit
 }
 
