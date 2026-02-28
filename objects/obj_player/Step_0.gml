@@ -80,6 +80,87 @@ if(flying){
 	exit
 }
 
+/////////////////////////
+
+//flying
+//overrides basically all other controls. If flying, ignore everything else
+
+if(flying){
+	
+	/*if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){dir[0]=-1;}
+	else if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){dir[0]=-1;}
+	//else {dir[0]=0}
+	
+	if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){dir[1]=-1;}
+	else if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){dir[1]=-1;}
+*/
+	/*if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A")) ){dir[0]=-1;}
+	else if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D")) ){dir[0]=1;}
+	//else {dir[0]=0}*/
+	
+	if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A")) ){
+		dir[0]=-1;
+		if (not (keyboard_check(vk_up) or keyboard_check(ord("W"))
+			or keyboard_check(vk_down) or keyboard_check(ord("S"))) ){
+			dir[1]=0
+		}
+	}
+	else if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D")) ){
+		dir[0]=1;
+		if (not (keyboard_check(vk_up) or keyboard_check(ord("W"))
+			or keyboard_check(vk_down) or keyboard_check(ord("S"))) ){
+			dir[1]=0
+		}
+	}
+	if (keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) ){
+		dir[1]=-1;
+		if (not (keyboard_check(vk_left) or keyboard_check(ord("A"))
+			or keyboard_check(vk_right) or keyboard_check(ord("D"))) ){
+			dir[0]=0
+		}
+	}
+	else if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S")) ){
+		dir[1]=1;
+		if (not (keyboard_check(vk_left) or keyboard_check(ord("A"))
+			or keyboard_check(vk_right) or keyboard_check(ord("D"))) ){
+			dir[0]=0
+		}
+	}
+	
+	//////////
+	
+	if (keyboard_check_released(vk_left)  or keyboard_check_released(ord("A"))){
+		if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){dir[1]=-1; dir[0]=0;}
+		else if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){dir[1]=1; dir[0]=0;}
+		
+	}
+	else if (keyboard_check_released(vk_right)  or keyboard_check_released(ord("D"))){
+		if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){dir[1]=-1; dir[0]=0;}
+		else if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){dir[1]=1; dir[0]=0;}
+		
+	}
+	if (keyboard_check_released(vk_up)  or keyboard_check_released(ord("W"))){
+		if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){dir[1]=0;}
+		else if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){dir[1]=0;}
+		
+	}
+	else if (keyboard_check_released(vk_down)  or keyboard_check_released(ord("S"))){
+		if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){dir[1]=0;}
+		else if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){dir[1]=0;}
+		
+	}
+	
+	
+	
+	var _mag = sqrt( sqr(dir[0]) + sqr(dir[1]) ); //pythag lol
+	var _normal_dir = [ dir[0]/_mag, dir[1]/_mag];
+	
+	
+	
+	move_steps(_normal_dir[0] *fly_speed,_normal_dir[1] * fly_speed);
+	exit
+}
+
 
 
 dir[0] = 0;
@@ -103,7 +184,10 @@ else{
 	grounded=false;
 	vel_y+=grav_speed;
 }
-if(climbing){vel_y=0;}
+
+friction_power = 1;
+if(climbing){vel_y=0;
+	friction_power=3;}
 if(not place_meeting(x,y,obj_climbable)){climbing=false;}
 //head-hitting
 if (detect_tile(0,-1)!=0){
