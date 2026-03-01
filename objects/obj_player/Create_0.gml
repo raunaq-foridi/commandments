@@ -43,4 +43,8 @@ flight_time=0;		//unimplemented
 fly_angle=0;
 turn_speed=0.05;
 
+// checkpoint pos
+
+checkpoint_x = x;
+checkpoint_y = y;
 interactions=[];

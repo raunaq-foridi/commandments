@@ -241,7 +241,7 @@ if (detect_tile(0,-1)!=0){
 
 
 if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
-	
+	if(climbing){move_steps(-climb_speed,0);}
 	if(not dashing){vel_x=-move_speed;}
 	facing = "left";
 	dir[0]=-1;
@@ -251,7 +251,7 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
 }
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
-	
+	if(climbing){move_steps(climb_speed,0);}
 	if(not dashing){vel_x=move_speed;}
 	facing = "right";
 	dir[0]=1;
@@ -347,7 +347,16 @@ if (!dashing and !flying){
 	}
 }
 
-move_steps(vel_x,vel_y);
+if (not move_steps(vel_x,vel_y)) {
+	if place_meeting(x, y, obj_holy) {
+		on_death();
+	}
+	else {
+		sprite_index = spr_player_stone;
+		on_death();
+		sprite_index = spr_player_idle;
+	}
+}
 
 //ANIMATION
 if(facing="left"){image_xscale=-1;}
@@ -358,3 +367,10 @@ if(grounded and not climbing){
 	else{sprite_index=spr_player_idle;}
 }
 else if (airtime>5){sprite_index=spr_player_jump;}
+
+
+function on_death() {
+	// add fade to black
+	x = checkpoint_x;
+	y = checkpoint_y;
+}
