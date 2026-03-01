@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"slopes",
   "isCompatibility":false,
   "isDnD":false,
