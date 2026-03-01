@@ -325,7 +325,8 @@ if (!dashing and !flying){
 }
 
 if (not move_steps(vel_x,vel_y)) {
-	print("ded")
+	x = checkpoint_x;
+	y = checkpoint_y;
 }
 
 //ANIMATION
