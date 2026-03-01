@@ -28,6 +28,7 @@ dir = [1,0]; //track the direction the player is "facing"
 			 
 jumps = 2;
 jump_number=0;
+airtime=0;
 
 climbing=false;
 climbed_obj = noone;
@@ -40,3 +41,8 @@ fly_speed=3;
 flight_time=0;		//unimplemented
 fly_angle=0;
 turn_speed=0.05;
+
+// checkpoint pos
+
+checkpoint_x = x;
+checkpoint_y = y;

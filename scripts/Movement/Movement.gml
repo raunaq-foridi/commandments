@@ -11,9 +11,7 @@ function move_steps2(_move_x,_move_y){
 		//move one step in x, unless collision
 		if (not detect_tile(_dir_x,0)){x+=_dir_x;}
 		//move one step in y, unless collision
-		if (not detect_tile(0,_dir_y)){
-			y+=_dir_y;	
-		}
+		if (not detect_tile(0,_dir_y)){y+=_dir_y;}
 	}
 	//At this point all x or y motion is complete; move straight in the remaining direction
 	if (_mag_x>_mag_y){
@@ -45,7 +43,10 @@ function move_steps(_move_x,_move_y){
 	//move diagonally (x->y->x->y... staircase) until one direction is done
 	for (var _i=0; _i<min(_mag_x,_mag_y); _i++){
 		//move one step in x, unless collision
-		if (not detect_tile(_dir_x,0)){x+=_dir_x;}
+		if (not detect_tile(_dir_x,0)){
+			x+=_dir_x;
+			if (detect_death(0,0)) {return false;}
+		}
 		//move one step in y, unless collision
 		if (not detect_tile(0,_dir_y)){
 			
@@ -61,13 +62,14 @@ function move_steps(_move_x,_move_y){
 				}
 				else{
 					y+=_dir_y;}
-			
+			if (detect_death(0,0)) {return false;}
 		}
 	}
 	//At this point all x or y motion is complete; move straight in the remaining direction
 	if (_mag_x>_mag_y){
 		repeat(_mag_x-_mag_y){
 			if (not detect_tile(_dir_x,0)){x+=_dir_x;}	//move in x until done
+			if (detect_death(0,0)) {return false;}
 		}
 	}
 	else{
@@ -87,6 +89,8 @@ function move_steps(_move_x,_move_y){
 					y+=_dir_y;}
 			}
 			//move in y until done
+			if (detect_death(0,0)) {return false;}
 		}
 	}
+	return true;
 }

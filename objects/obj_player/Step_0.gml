@@ -178,12 +178,14 @@ else{grav_speed = 1;}
 
 if (detect_tile(0,1)!=0 or climbing){
 	grounded=true;
+	airtime=0;
 	if(vel_y>=0){
 		vel_y=0;
 	}
 	jump_number=0;
 }
 else{
+	airtime+=1;
 	grounded=false;
 	vel_y+=grav_speed;
 }
@@ -321,4 +323,31 @@ if (!dashing and !flying){
 		}
 	}
 }
-move_steps(vel_x,vel_y);
+
+if (not move_steps(vel_x,vel_y)) {
+	if place_meeting(x, y, obj_holy) {
+		on_death();
+	}
+	else {
+		sprite_index = spr_player_stone;
+		on_death();
+		sprite_index = spr_player_idle;
+	}
+}
+
+//ANIMATION
+if(facing="left"){image_xscale=-1;}
+else{image_xscale=1;}
+
+if(grounded and not climbing){
+	if(abs(vel_x)>2){sprite_index=spr_player_run;}
+	else{sprite_index=spr_player_idle;}
+}
+else if (airtime>5){sprite_index=spr_player_jump;}
+
+
+function on_death() {
+	// add fade to black
+	x = checkpoint_x;
+	y = checkpoint_y;
+}
