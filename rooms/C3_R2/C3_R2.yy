@@ -28,6 +28,9 @@
     {"name":"inst_7B1DCC4F","path":"rooms/C3_R2/C3_R2.yy",},
     {"name":"inst_60E56F43","path":"rooms/C3_R2/C3_R2.yy",},
     {"name":"inst_7F158222","path":"rooms/C3_R2/C3_R2.yy",},
+    {"name":"inst_4320AC31","path":"rooms/C3_R2/C3_R2.yy",},
+    {"name":"inst_366076F4","path":"rooms/C3_R2/C3_R2.yy",},
+    {"name":"inst_22DFB8A6","path":"rooms/C3_R2/C3_R2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -85,6 +88,13 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"destination_pos","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[180,580]",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"destination","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"C4_R1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1284.0,"y":243.0,},
+        {"$GMRInstance":"","%Name":"inst_4320AC31","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4320AC31","objectId":{"name":"obj_music2","path":"objects/obj_music2/obj_music2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":608.0,},
+        {"$GMRInstance":"","%Name":"inst_366076F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_366076F4","objectId":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"propertyId":{"name":"text","path":"objects/obj_trigger/obj_trigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"3. Thou shalt not dash\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":672.0,},
+        {"$GMRInstance":"","%Name":"inst_22DFB8A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22DFB8A6","objectId":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"propertyId":{"name":"text","path":"objects/obj_sign/obj_sign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Press Shift to dash\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":672.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
