@@ -30,3 +30,5 @@ if(grounded){
 	vel_y+=grav_speed;
 	
 }*/
+
+array_sort(interactions,sort_distance);

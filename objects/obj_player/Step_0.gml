@@ -4,6 +4,28 @@
 //flying
 //overrides basically all other controls. If flying, ignore everything else
 
+///////////This section will deal with commandments. Until then, leave it commented out. ////////////
+
+/*
+
+if(global.unlocked[COMMANDMENTS.MOVE] ==false){exit};	//You cannot do anything until commandment 1 is broken
+if(global.unlocked[COMMANDMENTS.JUMP] ==false){jump_strength=0;} else {jump_strength=12;}
+if(global.unlocked[COMMANDMENTS.DASH] ==false){dash_cooling=true;}
+if(global.unlocked[COMMANDMENTS.STEAL] ==false){}		//items not yet implemented
+if(global.unlocked[COMMANDMENTS.TRUTH] ==false){}		//Truth not yet implemented
+if(global.unlocked[COMMANDMENTS.DEVIL] ==false){}		//I dont get what that does.
+if(global.unlocked[COMMANDMENTS.HEAVEN] ==false){}		//soon...
+if(global.unlocked[COMMANDMENTS.CLONE] ==false){}		//I don't even know how to do this one
+if(global.unlocked[COMMANDMENTS.KILL] ==false){}		//man I cant wait for this one.
+
+
+//*/
+
+///////////////////////////// This will be annoying to test.  /////////////////////////////////////
+
+
+//print(jump_number);
+
 if(flying){
 	fly_angle%=2*pi;
 
@@ -223,6 +245,9 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
 	if(not dashing){vel_x=-move_speed;}
 	facing = "left";
 	dir[0]=-1;
+	if(climbing){
+		move_steps(-climb_speed/2,0);
+	}
 }
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
@@ -230,6 +255,9 @@ if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
 	if(not dashing){vel_x=move_speed;}
 	facing = "right";
 	dir[0]=1;
+	if(climbing){
+		move_steps(climb_speed/2,0);
+	}
 }
 
 if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){
@@ -242,11 +270,7 @@ if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){
 	
 	
 	if(climbing){
-		//vel_y-=climb_speed;
-		//vel_y=0;
-		//print(random(10));
 		move_steps(0,-climb_speed);
-		//move_steps(0,-10);
 	}
 	
 	
@@ -260,7 +284,6 @@ if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){
 	else{climbing=false}
 	
 	if(climbing){
-		//vel_y-=climb_speed;
 		move_steps(0,climb_speed);
 	}
 
