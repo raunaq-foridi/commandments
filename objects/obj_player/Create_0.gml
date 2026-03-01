@@ -28,6 +28,7 @@ dir = [1,0]; //track the direction the player is "facing"
 			 
 jumps = 2;
 jump_number=0;
+airtime=0;
 
 climbing=false;
 climbed_obj = noone;
