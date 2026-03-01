@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"BLANK GAME",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -27,11 +27,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"BLANK GAME",
   "resources":[
@@ -114,6 +115,7 @@
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
     {"id":{"name":"spr_dot","path":"sprites/spr_dot/spr_dot.yy",},},
+    {"id":{"name":"Sprite28","path":"sprites/Sprite28/Sprite28.yy",},},
     {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},},
@@ -126,6 +128,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"C4_R2","path":"rooms/C4_R2/C4_R2.yy",},},
     {"roomId":{"name":"C3_R2","path":"rooms/C3_R2/C3_R2.yy",},},
     {"roomId":{"name":"C2_R2","path":"rooms/C2_R2/C2_R2.yy",},},
     {"roomId":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
@@ -133,7 +136,6 @@
     {"roomId":{"name":"C1","path":"rooms/C1/C1.yy",},},
     {"roomId":{"name":"C3_R1","path":"rooms/C3_R1/C3_R1.yy",},},
     {"roomId":{"name":"C4_R1","path":"rooms/C4_R1/C4_R1.yy",},},
-    {"roomId":{"name":"C4_R2","path":"rooms/C4_R2/C4_R2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
