@@ -318,4 +318,7 @@ if (!dashing and !flying){
 		}
 	}
 }
-move_steps(vel_x,vel_y);
+
+if (not move_steps(vel_x,vel_y)) {
+	print("ded")
+}
