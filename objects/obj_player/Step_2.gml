@@ -18,10 +18,10 @@ if(grounded){
 		//print("Aaaaaa");
 	}
 	
-	/*if(detect_tile(-sign(vel_x),0)){	//check for tile directly behind player
+	if(detect_tile(-sign(vel_x),0)){	//check for tile directly behind player
 		var _dy = down_slope();
 		if (_dy<=slope_max){vel_y+=_dy}	//shove player down while moving down slope
-	}*/
+	}
 	
 		
 }
