@@ -4,6 +4,28 @@
 //flying
 //overrides basically all other controls. If flying, ignore everything else
 
+///////////This section will deal with commandments. Until then, leave it commented out. ////////////
+
+/*
+
+if(global.unlocked[COMMANDMENTS.MOVE] ==false){exit};	//You cannot do anything until commandment 1 is broken
+if(global.unlocked[COMMANDMENTS.JUMP] ==false){jump_strength=0;} else {jump_strength=12;}
+if(global.unlocked[COMMANDMENTS.DASH] ==false){dash_cooling=true;}
+if(global.unlocked[COMMANDMENTS.STEAL] ==false){}		//items not yet implemented
+if(global.unlocked[COMMANDMENTS.TRUTH] ==false){}		//Truth not yet implemented
+if(global.unlocked[COMMANDMENTS.DEVIL] ==false){}		//I dont get what that does.
+if(global.unlocked[COMMANDMENTS.HEAVEN] ==false){}		//soon...
+if(global.unlocked[COMMANDMENTS.CLONE] ==false){}		//I don't even know how to do this one
+if(global.unlocked[COMMANDMENTS.KILL] ==false){}		//man I cant wait for this one.
+
+
+//*/
+
+///////////////////////////// This will be annoying to test.  /////////////////////////////////////
+
+
+//print(jump_number);
+
 if(flying){
 	fly_angle%=2*pi;
 
