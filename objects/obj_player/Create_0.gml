@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth=0;
 grounded = false;
 vel_x = 0;
 vel_y = 0;
@@ -41,3 +42,9 @@ fly_speed=3;
 flight_time=0;		//unimplemented
 fly_angle=0;
 turn_speed=0.05;
+
+// checkpoint pos
+
+checkpoint_x = x;
+checkpoint_y = y;
+interactions=[];
