@@ -15,6 +15,7 @@
     {"name":"inst_4C1F909F","path":"rooms/C2_R1/C2_R1.yy",},
     {"name":"inst_36829AFE","path":"rooms/C2_R1/C2_R1.yy",},
     {"name":"inst_6F039A34","path":"rooms/C2_R1/C2_R1.yy",},
+    {"name":"inst_495628CB","path":"rooms/C2_R1/C2_R1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -41,6 +42,10 @@
         {"$GMRInstance":"","%Name":"inst_6F039A34","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F039A34","objectId":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"propertyId":{"name":"text","path":"objects/obj_sign/obj_sign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Press spacebar to jump. Use W and S to climb\"",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":452.0,"y":596.0,},
+        {"$GMRInstance":"","%Name":"inst_495628CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_495628CB","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"propertyId":{"name":"destination","path":"objects/obj_portal/obj_portal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"C2_R2",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"propertyId":{"name":"destination_pos","path":"objects/obj_portal/obj_portal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[1280,660]",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":57.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

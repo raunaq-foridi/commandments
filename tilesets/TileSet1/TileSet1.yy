@@ -1,5 +1,5 @@
 {
-  "$GMTileSet":"v1",
+  "$GMTileSet":"",
   "%Name":"TileSet1",
   "autoTileSets":[],
   "macroPageTiles":{
