@@ -223,6 +223,9 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
 	if(not dashing){vel_x=-move_speed;}
 	facing = "left";
 	dir[0]=-1;
+	if(climbing){
+		move_steps(-climb_speed/2,0);
+	}
 }
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
@@ -230,6 +233,9 @@ if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
 	if(not dashing){vel_x=move_speed;}
 	facing = "right";
 	dir[0]=1;
+	if(climbing){
+		move_steps(climb_speed/2,0);
+	}
 }
 
 if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){
@@ -242,11 +248,7 @@ if (keyboard_check(vk_up) or keyboard_check(ord("W")) ){
 	
 	
 	if(climbing){
-		//vel_y-=climb_speed;
-		//vel_y=0;
-		//print(random(10));
 		move_steps(0,-climb_speed);
-		//move_steps(0,-10);
 	}
 	
 	
@@ -260,7 +262,6 @@ if (keyboard_check(vk_down) or keyboard_check(ord("S")) ){
 	else{climbing=false}
 	
 	if(climbing){
-		//vel_y-=climb_speed;
 		move_steps(0,climb_speed);
 	}
 
