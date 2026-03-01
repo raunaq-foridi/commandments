@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_checkpoint",
   "bboxMode":0,
-  "bbox_bottom":59,
+  "bbox_bottom":58,
   "bbox_left":0,
   "bbox_right":29,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":59,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ee953595-dc77-42be-91f5-ce8764b48ba5","blendMode":0,"displayName":"default","isLocked":false,"name":"ee953595-dc77-42be-91f5-ce8764b48ba5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":30,
 }
