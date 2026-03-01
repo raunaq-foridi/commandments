@@ -323,7 +323,6 @@ if (keyboard_check_pressed(vk_shift) and not dash_cooling){
 	
 	climbing=false;
 	grounded=false;
-	jump_number = jumps;
 	
 }
 //friction

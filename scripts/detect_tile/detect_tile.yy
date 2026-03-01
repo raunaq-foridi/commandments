@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"detect_tile",
   "isCompatibility":false,
   "isDnD":false,
