@@ -6,7 +6,7 @@
 
 ///////////This section will deal with commandments. Until then, leave it commented out. ////////////
 
-/*
+
 
 if(global.unlocked[COMMANDMENTS.MOVE] ==false){exit};	//You cannot do anything until commandment 1 is broken
 if(global.unlocked[COMMANDMENTS.JUMP] ==false){jump_strength=0;} else {jump_strength=12;}
@@ -19,7 +19,7 @@ if(global.unlocked[COMMANDMENTS.CLONE] ==false){}		//I don't even know how to do
 if(global.unlocked[COMMANDMENTS.KILL] ==false){}		//man I cant wait for this one.
 
 
-//*/
+//
 
 ///////////////////////////// This will be annoying to test.  /////////////////////////////////////
 

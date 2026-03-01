@@ -26,3 +26,5 @@ global.key_ids=[];	//check if a specific key is collected
 for(var _i=0; _i<total_keys; _i+=1){
 	array_push(global.key_ids,false);	
 }
+
+counter = 0;
