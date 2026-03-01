@@ -21,13 +21,12 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRTileLayer":"","%Name":"death_tiles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"death_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[-3225,-2147483648,1,1,-902,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"deathTiles","path":"tilesets/deathTiles/deathTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"complex_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"complex_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
-          -835,-2147483648,-9,0,-77,-2147483648,-9,0,-77,-2147483648,-9,0,-77,-2147483648,-9,0,-77,-2147483648,
-          -9,0,-77,-2147483648,-9,0,-77,-2147483648,-9,0,-75,-2147483648,-11,0,-74,-2147483648,2,0,-2147483648,
-          -10,0,-76,-2147483648,1,0,-3,-2147483648,-4,0,-82,-2147483648,-4,0,-82,-2147483648,-4,0,-82,-2147483648,
-          4,0,-2147483648,0,0,-85,-2147483648,1,0,-931,-2147483648,1,3,-83,-2147483648,4,0,-2147483648,7,4,-82,
-          -2147483648,4,0,1,-2147483648,15,-81,-2147483648,2,12,13,-80,-2147483648,4,8,9,10,11,-896,-2147483648,
+    {"$GMRTileLayer":"","%Name":"complex_tiles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"complex_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
+          -1511,-2147483648,-2,0,-82,-2147483648,-2,0,-2,-2147483648,3,0,-2147483648,0,-77,-2147483648,-2,0,-6,
+          -2147483648,3,0,-2147483648,0,-75,-2147483648,1,0,-85,-2147483648,1,0,-85,-2147483648,1,0,-85,-2147483648,
+          1,0,-85,-2147483648,1,0,-3,-2147483648,1,0,-82,-2147483648,-4,0,-691,-2147483648,1,3,-83,-2147483648,
+          4,0,-2147483648,7,4,-82,-2147483648,4,0,1,-2147483648,15,-81,-2147483648,2,12,13,-80,-2147483648,4,8,
+          9,10,11,-896,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"solid_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"solid_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -558,-2147483648,1,2,-54,-2147483648,1,2,-270,-2147483648,1,2,-117,-2147483648,1,4,-75,-2147483648,1,
