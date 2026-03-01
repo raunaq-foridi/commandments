@@ -5,7 +5,7 @@
 
 //print(global.key_ids[key_id]);
 if(global.key_ids[key_id]==true){instance_destroy();}
-
+if (place_meeting(x,y,obj_player)){interaction();}
 if(global.unlocked[COMMANDMENTS.STEAL]){
 	radius=20;
 	image_index=1;
