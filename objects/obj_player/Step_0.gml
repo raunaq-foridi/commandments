@@ -217,14 +217,14 @@ if (detect_tile(0,-1)!=0){
 
 
 if (keyboard_check(vk_left) or keyboard_check(ord("A")) ){
-	
+	if(climbing){move_steps(-climb_speed,0);}
 	if(not dashing){vel_x=-move_speed;}
 	facing = "left";
 	dir[0]=-1;
 }
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D")) ){
-	
+	if(climbing){move_steps(climb_speed,0);}
 	if(not dashing){vel_x=move_speed;}
 	facing = "right";
 	dir[0]=1;
