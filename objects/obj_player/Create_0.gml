@@ -26,7 +26,7 @@ dash_cooldown=60;
 dir = [1,0]; //track the direction the player is "facing"
 			 //mainly for 8 directional dashing
 			 
-jumps = 2;
+jumps = 1; // set 0 for lvl 1, 1 for for no double jump, and 2 from double jump unlock.
 jump_number=0;
 airtime=0;
 

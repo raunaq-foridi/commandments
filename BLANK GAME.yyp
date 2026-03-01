@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.4.1003",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"BLANK GAME",
   "resources":[
@@ -52,6 +52,7 @@
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_semisolid","path":"objects/obj_semisolid/obj_semisolid.yy",},},
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"C1","path":"rooms/C1/C1.yy",},},
     {"id":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
     {"id":{"name":"C2_R2","path":"rooms/C2_R2/C2_R2.yy",},},
@@ -59,7 +60,6 @@
     {"id":{"name":"C3_R2","path":"rooms/C3_R2/C3_R2.yy",},},
     {"id":{"name":"C4_R1","path":"rooms/C4_R1/C4_R1.yy",},},
     {"id":{"name":"C4_R2","path":"rooms/C4_R2/C4_R2.yy",},},
-    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"detect_death","path":"scripts/detect_death/detect_death.yy",},},
@@ -94,6 +94,7 @@
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
+    {"id":{"name":"Sprite28","path":"sprites/Sprite28/Sprite28.yy",},},
     {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},},
@@ -105,6 +106,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"C4_R2","path":"rooms/C4_R2/C4_R2.yy",},},
     {"roomId":{"name":"C3_R2","path":"rooms/C3_R2/C3_R2.yy",},},
     {"roomId":{"name":"C2_R2","path":"rooms/C2_R2/C2_R2.yy",},},
     {"roomId":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
@@ -113,7 +115,6 @@
     {"roomId":{"name":"C1","path":"rooms/C1/C1.yy",},},
     {"roomId":{"name":"C3_R1","path":"rooms/C3_R1/C3_R1.yy",},},
     {"roomId":{"name":"C4_R1","path":"rooms/C4_R1/C4_R1.yy",},},
-    {"roomId":{"name":"C4_R2","path":"rooms/C4_R2/C4_R2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
