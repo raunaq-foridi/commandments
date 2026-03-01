@@ -17,6 +17,7 @@ jump_strength=12;
 
 slope_max = 3;
 
+dash_allowed=false;
 dash_strength = 15;
 up_dash_speed_cap = 0.3; //how much are you clamping the upwards dashing to?
 vert_dash_speed_mult = 0.5; //how much are you restricting vertical dashing in general vs horizontal dashing?

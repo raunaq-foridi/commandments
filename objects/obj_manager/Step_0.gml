@@ -76,6 +76,7 @@ else if (not global.unlocked[COMMANDMENTS.STEAL]){
 		global.unlocked[COMMANDMENTS.STEAL]=true;
 		counter=0;
 		triggered=false;
+		obj_player.interactions=[];
 	}
 	
 	

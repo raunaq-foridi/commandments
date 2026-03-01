@@ -10,7 +10,7 @@
 
 if(global.unlocked[COMMANDMENTS.MOVE] ==false){exit};	//You cannot do anything until commandment 1 is broken
 if(global.unlocked[COMMANDMENTS.JUMP] ==false){jump_strength=0;} else {jump_strength=12;}
-if(global.unlocked[COMMANDMENTS.DASH] ==false){dash_cooling=true;}
+if(global.unlocked[COMMANDMENTS.DASH] ==false){dash_allowed=false;} else {dash_allowed=true;}
 if(global.unlocked[COMMANDMENTS.STEAL] ==false){}		//items not yet implemented
 if(global.unlocked[COMMANDMENTS.TRUTH] ==false){}		//Truth not yet implemented
 if(global.unlocked[COMMANDMENTS.DEVIL] ==false){}		//I dont get what that does.
@@ -304,7 +304,7 @@ if (keyboard_check_released(vk_space)) {
 }
 
 //dash
-if (keyboard_check_pressed(vk_shift) and not dash_cooling){
+if (keyboard_check_pressed(vk_shift) and not dash_cooling and dash_allowed){
 	print(dir);
 	//vel_x = 0;
 	//vel_y = 0;
