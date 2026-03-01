@@ -325,8 +325,14 @@ if (!dashing and !flying){
 }
 
 if (not move_steps(vel_x,vel_y)) {
-	x = checkpoint_x;
-	y = checkpoint_y;
+	if place_meeting(x, y, obj_holy) {
+		on_death();
+	}
+	else {
+		sprite_index = spr_player_stone;
+		on_death();
+		sprite_index = spr_player_idle;
+	}
 }
 
 //ANIMATION
@@ -338,3 +344,10 @@ if(grounded and not climbing){
 	else{sprite_index=spr_player_idle;}
 }
 else if (airtime>5){sprite_index=spr_player_jump;}
+
+
+function on_death() {
+	// add fade to black
+	x = checkpoint_x;
+	y = checkpoint_y;
+}
