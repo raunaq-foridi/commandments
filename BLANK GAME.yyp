@@ -43,6 +43,8 @@
     {"id":{"name":"C1","path":"rooms/C1/C1.yy",},},
     {"id":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
     {"id":{"name":"C2_R2","path":"rooms/C2_R2/C2_R2.yy",},},
+    {"id":{"name":"C3_R1","path":"rooms/C3_R1/C3_R1.yy",},},
+    {"id":{"name":"C3_R2","path":"rooms/C3_R2/C3_R2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"detect_tile","path":"scripts/detect_tile/detect_tile.yy",},},
     {"id":{"name":"furthest_instance","path":"scripts/furthest_instance/furthest_instance.yy",},},
@@ -69,10 +71,12 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"C3_R2","path":"rooms/C3_R2/C3_R2.yy",},},
     {"roomId":{"name":"C2_R2","path":"rooms/C2_R2/C2_R2.yy",},},
     {"roomId":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"C1","path":"rooms/C1/C1.yy",},},
+    {"roomId":{"name":"C3_R1","path":"rooms/C3_R1/C3_R1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

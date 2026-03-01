@@ -21,8 +21,8 @@
     {"$GMRTileLayer":"","%Name":"solid_tiles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"solid_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -64,3,-4,0,-18,3,-64,4,-4,0,-82,4,-4,0,-18,4,-81,0,-263,-2147483648,-50,3,-4,-2147483648,-32,3,-50,4,
           -4,-2147483648,-82,4,-4,-2147483648,-32,4,-8,-2147483648,1,0,-679,-2147483648,-36,3,-4,0,-46,3,-36,4,
-          -4,0,-82,4,-4,0,-46,4,-79,-2147483648,-7,0,-79,-2147483648,-7,0,-79,-2147483648,-523,0,-22,3,-4,0,-60,
-          3,-22,4,-4,0,-82,4,-4,0,-60,4,-516,0,-86,1,-172,3,-516,4,
+          -4,0,-82,4,-4,0,-46,4,-79,-2147483648,-7,0,-79,-2147483648,-7,0,-36,-2147483648,1,0,-42,-2147483648,
+          -523,0,-22,3,-4,0,-60,3,-22,4,-4,0,-82,4,-4,0,-60,4,-516,0,-86,1,-172,3,-516,4,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"complex_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"complex_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[-4128,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

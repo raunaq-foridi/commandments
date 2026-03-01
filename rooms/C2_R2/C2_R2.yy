@@ -53,10 +53,10 @@
           2,-356,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"damageTileSet","path":"tilesets/damageTileSet/damageTileSet.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"solid_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"solid_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
-          -64,3,-4,0,-18,3,-64,4,-4,0,-18,4,-167,0,-5,-2147483648,-860,0,-10,1,-10,2,-4,0,-4,1,-6,3,1,1,-51,0,
-          -20,3,-4,0,-8,3,-2,4,-2,3,-66,0,-4,4,-4,0,-2,4,-7,0,-3,4,-84,0,-2,4,1,3,-84,0,1,4,-50,3,-35,0,-51,4,
-          -1032,0,-10,1,-10,3,-8,1,-6,3,-20,2,-4,0,-10,2,-72,3,-4,0,-28,3,-860,0,-10,1,-12,3,-24,2,-21,1,-12,3,
-          -4,0,-3,2,-79,3,-4,0,-3,3,-79,4,-4,0,-89,4,
+          -86,3,-86,4,-167,0,-5,-2147483648,-860,0,-10,1,-10,2,-4,0,-4,1,-6,3,1,1,-51,0,-20,3,-4,0,-8,3,-2,4,-2,
+          3,-66,0,-4,4,-4,0,-2,4,-7,0,-3,4,-84,0,-2,4,1,3,-84,0,1,4,-50,3,-35,0,-51,4,-1032,0,-10,1,-10,3,-8,1,
+          -6,3,-20,2,-4,0,-10,2,-72,3,-4,0,-28,3,-860,0,-10,1,-12,3,-24,2,-21,1,-12,3,-4,0,-3,2,-79,3,-4,0,-3,
+          3,-79,4,-4,0,-89,4,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"complex_tiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"complex_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[-4128,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"complexTiles","path":"tilesets/complexTiles/complexTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
