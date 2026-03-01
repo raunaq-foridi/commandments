@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"read_input",
   "isCompatibility":false,
   "isDnD":false,

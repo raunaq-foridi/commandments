@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth=0;
 grounded = false;
 vel_x = 0;
 vel_y = 0;
@@ -46,3 +47,4 @@ turn_speed=0.05;
 
 checkpoint_x = x;
 checkpoint_y = y;
+interactions=[];
