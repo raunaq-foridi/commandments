@@ -13,6 +13,7 @@ if(global.unlocked[COMMANDMENTS.JUMP] ==false){jump_strength=0;} else {jump_stre
 if(global.unlocked[COMMANDMENTS.DASH] ==false){dash_allowed=false;} else {dash_allowed=true;}
 if(global.unlocked[COMMANDMENTS.STEAL] ==false){}		//items not yet implemented
 if(global.unlocked[COMMANDMENTS.TRUTH] ==false){}		//Truth not yet implemented
+if(global.unlocked[COMMANDMENTS.DOUBLE] ==false){jumps=1;} else {jumps=2;}
 if(global.unlocked[COMMANDMENTS.DEVIL] ==false){}		//I dont get what that does.
 if(global.unlocked[COMMANDMENTS.HEAVEN] ==false){}		//soon...
 if(global.unlocked[COMMANDMENTS.CLONE] ==false){}		//I don't even know how to do this one
