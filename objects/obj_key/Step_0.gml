@@ -19,4 +19,3 @@ else{
 if(keyboard_check_pressed(ord("P"))){global.unlocked[COMMANDMENTS.STEAL] = !global.unlocked[COMMANDMENTS.STEAL]}
 
 event_inherited();
-

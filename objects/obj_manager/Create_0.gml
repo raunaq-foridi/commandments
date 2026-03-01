@@ -28,3 +28,5 @@ for(var _i=0; _i<total_keys; _i+=1){
 }
 
 counter = 0;
+
+triggered=true;
