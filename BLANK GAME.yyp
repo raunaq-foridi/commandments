@@ -61,7 +61,7 @@
     {"id":{"name":"obj_semisolid","path":"objects/obj_semisolid/obj_semisolid.yy",},},
     {"id":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
-    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},\
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},},
     {"id":{"name":"C1","path":"rooms/C1/C1.yy",},},
     {"id":{"name":"C2_R1","path":"rooms/C2_R1/C2_R1.yy",},},
