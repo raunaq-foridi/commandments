@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //COMMAND BREAKING
-print(global.unlocked[COMMANDMENTS.MOVE]);
+//print(global.unlocked[COMMANDMENTS.MOVE]);
 if(not triggered){exit}
 if(not instance_exists(obj_commandment)){exit}
 if(not global.unlocked[COMMANDMENTS.MOVE]){
